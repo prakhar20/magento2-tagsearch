@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd"><event name="controller_action_postdispatch_review_product_post"><observer name="codilar_producttags_savetags" instance="Codilar\ProductTags\Model\Observer\SaveTags"/></event></config>

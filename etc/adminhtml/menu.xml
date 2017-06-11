@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    <add id="Codilar_ProductTags::tags_grid" resource="Codilar_ProductTags::tags_grid" title="Tags" action="producttags/tags/index" module="Codilar_ProductTags" sortOrder="40"/></menu>
+</config>
