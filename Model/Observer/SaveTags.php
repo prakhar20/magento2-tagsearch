@@ -55,7 +55,7 @@ class SaveTags implements \Magento\Framework\Event\ObserverInterface
 											'customer_id'=>$this->_customerSession->getCustomerId()
 									);
 									$this->_relationsModel->setData($relationData)->save();
-									$this->_messgeManager->addSuccess("New Product Tag ".$existingTag->getTitle()."Created And Added To This Product");
+									$this->_messgeManager->addSuccess("New Product Tag ".$existingTag->getTitle()."Created And Added To This Product (Status Pending)");
 									}
 
 								catch (\Exception $e){

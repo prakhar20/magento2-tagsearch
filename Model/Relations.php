@@ -31,11 +31,11 @@ class Relations extends \Magento\Framework\Model\AbstractModel implements Relati
             $tags = explode(' ',$tags);
             if(count($tags)> 0 )
             {  
-                $collection->addFieldToFilter('tags.title',array('in'=>$tags));
+                $collection->addFieldToFilter('tags.title',array('in'=>$tags))
+                           ->addFieldToFilter('tags.status',1);
             }
         }
         $collection->getSelect()->group('product_id');
-        return $collection;
-    	
+        return $collection;    	
     }
 }
